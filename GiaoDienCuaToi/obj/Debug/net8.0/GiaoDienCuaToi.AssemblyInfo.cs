@@ -11,16 +11,16 @@ using System;
 using System.Reflection;
 
 [assembly: OrchardCore.Modules.Manifest.ModuleMarkerAttribute("GiaoDienCuaToi", "Theme")]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\GiaoDienCuaToi\\Views\\Layout.liquid|D:\\HocOrchard\\GiaoDienCuaToi\\Views\\Layou" +
-    "t.liquid"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\GiaoDienCuaToi\\wwwroot\\css\\style.css|D:\\HocOrchard\\GiaoDienCuaToi\\wwwroot\\c" +
-    "ss\\style.css"))]
-[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\GiaoDienCuaToi\\wwwroot\\js\\main.js|D:\\HocOrchard\\GiaoDienCuaToi\\wwwroot\\js\\m" +
-    "ain.js"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\GiaoDienCuaToi\\Views\\Layout.liquid|D:\\De-tai-huecit\\HocOrchard\\GiaoDienCuaT" +
+    "oi\\Views\\Layout.liquid"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\GiaoDienCuaToi\\wwwroot\\css\\style.css|D:\\De-tai-huecit\\HocOrchard\\GiaoDienCu" +
+    "aToi\\wwwroot\\css\\style.css"))]
+[assembly: OrchardCore.Modules.Manifest.ModuleAssetAttribute(("Areas\\GiaoDienCuaToi\\wwwroot\\js\\main.js|D:\\De-tai-huecit\\HocOrchard\\GiaoDienCuaTo" +
+    "i\\wwwroot\\js\\main.js"))]
 [assembly: System.Reflection.AssemblyCompanyAttribute("GiaoDienCuaToi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d1d558219d0abafcc58a6663be0600403dadd94")]
 [assembly: System.Reflection.AssemblyProductAttribute("GiaoDienCuaToi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GiaoDienCuaToi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

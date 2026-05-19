@@ -50,7 +50,6 @@ h4 { font-size: 1.35rem; }
     left: 0;
     width: 100%;
     background: rgba(250, 249, 249, 0.85);
-    backdrop-filter: blur(12px);
     border-bottom: 1px solid #e3e2e2;
     z-index: 1000;
 }
