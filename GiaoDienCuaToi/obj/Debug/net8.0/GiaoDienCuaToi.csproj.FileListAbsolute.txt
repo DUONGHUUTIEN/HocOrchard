@@ -9,6 +9,7 @@ D:\HocOrchard\GiaoDienCuaToi\obj\Debug\net8.0\GiaoDienCuaToi.GeneratedMSBuildEdi
 D:\HocOrchard\GiaoDienCuaToi\obj\Debug\net8.0\GiaoDienCuaToi.AssemblyInfoInputs.cache
 D:\HocOrchard\GiaoDienCuaToi\obj\Debug\net8.0\GiaoDienCuaToi.AssemblyInfo.cs
 D:\HocOrchard\GiaoDienCuaToi\obj\Debug\net8.0\GiaoDienCuaToi.csproj.CoreCompileInputs.cache
+D:\HocOrchard\GiaoDienCuaToi\obj\Debug\net8.0\GiaoDienCuaToi.sourcelink.json
 D:\HocOrchard\GiaoDienCuaToi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\HocOrchard\GiaoDienCuaToi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\HocOrchard\GiaoDienCuaToi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

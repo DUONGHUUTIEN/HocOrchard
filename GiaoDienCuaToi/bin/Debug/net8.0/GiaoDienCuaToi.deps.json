@@ -10,6 +10,7 @@
         "dependencies": {
           "OrchardCore.ContentManagement": "2.2.1",
           "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.Menu": "2.2.1",
           "OrchardCore.ResourceManagement": "2.2.1",
           "OrchardCore.Theme.Targets": "2.2.1"
         },
@@ -79,6 +80,38 @@
           "lib/net8.0/Fluid.dll": {
             "assemblyVersion": "2.25.0.0",
             "fileVersion": "2.25.0.0"
+          }
+        }
+      },
+      "GraphQL/7.9.0": {
+        "dependencies": {
+          "GraphQL-Parser": "8.4.2",
+          "GraphQL.Analyzers": "7.9.0"
+        },
+        "runtime": {
+          "lib/net6.0/GraphQL.dll": {
+            "assemblyVersion": "7.9.0.0",
+            "fileVersion": "7.9.0.0"
+          }
+        }
+      },
+      "GraphQL-Parser/8.4.2": {
+        "runtime": {
+          "lib/net6.0/GraphQLParser.dll": {
+            "assemblyVersion": "8.4.2.0",
+            "fileVersion": "8.4.2.0"
+          }
+        }
+      },
+      "GraphQL.Analyzers/7.9.0": {},
+      "GraphQL.DataLoader/7.9.0": {
+        "dependencies": {
+          "GraphQL": "7.9.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.DataLoader.dll": {
+            "assemblyVersion": "7.9.0.0",
+            "fileVersion": "7.9.0.0"
           }
         }
       },
@@ -593,6 +626,38 @@
           }
         }
       },
+      "OrchardCore.Admin.Abstractions/2.2.1": {
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Abstractions": "2.2.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Admin.Abstractions.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
+          }
+        }
+      },
+      "OrchardCore.Apis.GraphQL.Abstractions/2.2.1": {
+        "dependencies": {
+          "GraphQL": "7.9.0",
+          "GraphQL.DataLoader": "7.9.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.DisplayManagement.Abstractions": "2.2.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Apis.GraphQL.Abstractions.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
+          }
+        }
+      },
       "OrchardCore.ContentManagement/2.2.1": {
         "dependencies": {
           "Azure.Identity": "1.13.2",
@@ -650,6 +715,58 @@
         },
         "runtime": {
           "lib/net8.0/OrchardCore.ContentManagement.Display.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
+          }
+        }
+      },
+      "OrchardCore.ContentManagement.GraphQL/2.2.1": {
+        "dependencies": {
+          "Azure.Identity": "1.13.2",
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "GraphQL": "7.9.0",
+          "GraphQL.DataLoader": "7.9.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.Extensions.Caching.Memory": "8.0.1",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.12.0",
+          "OrchardCore.Apis.GraphQL.Abstractions": "2.2.1",
+          "OrchardCore.ContentManagement": "2.2.1",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "OrchardCore.ContentManagement.Display": "2.2.1",
+          "OrchardCore.ContentTypes.Abstractions": "2.2.1",
+          "OrchardCore.Contents.Core": "2.2.1",
+          "System.Text.Json": "8.0.5",
+          "YesSql": "5.4.6",
+          "YesSql.Abstractions": "5.4.6",
+          "YesSql.Core": "5.4.6",
+          "YesSql.Filters.Abstractions": "5.4.6",
+          "YesSql.Filters.Query": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.ContentManagement.GraphQL.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
+          }
+        }
+      },
+      "OrchardCore.Contents.Core/2.2.1": {
+        "dependencies": {
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "OrchardCore.DisplayManagement.Abstractions": "2.2.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "YesSql.Abstractions": "5.4.6",
+          "YesSql.Filters.Abstractions": "5.4.6",
+          "YesSql.Filters.Query": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Contents.Core.dll": {
             "assemblyVersion": "2.2.1.0",
             "fileVersion": "2.2.1.0"
           }
@@ -810,6 +927,44 @@
           }
         }
       },
+      "OrchardCore.Menu/2.2.1": {
+        "dependencies": {
+          "Azure.Identity": "1.13.2",
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "GraphQL": "7.9.0",
+          "GraphQL.DataLoader": "7.9.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.Extensions.Caching.Memory": "8.0.1",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.12.0",
+          "OrchardCore.Admin.Abstractions": "2.2.1",
+          "OrchardCore.ContentManagement.Abstractions": "2.2.1",
+          "OrchardCore.ContentManagement.Display": "2.2.1",
+          "OrchardCore.ContentManagement.GraphQL": "2.2.1",
+          "OrchardCore.ContentTypes.Abstractions": "2.2.1",
+          "OrchardCore.Data.Abstractions": "2.2.1",
+          "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.Module.Targets": "2.2.1",
+          "OrchardCore.Navigation.Core": "2.2.1",
+          "OrchardCore.Recipes.Abstractions": "2.2.1",
+          "OrchardCore.ResourceManagement": "2.2.1",
+          "System.Text.Json": "8.0.5",
+          "YesSql": "5.4.6",
+          "YesSql.Abstractions": "5.4.6",
+          "YesSql.Core": "5.4.6",
+          "YesSql.Filters.Abstractions": "5.4.6",
+          "YesSql.Filters.Query": "5.4.6",
+          "ZString": "2.6.0"
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Menu.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
+          }
+        }
+      },
       "OrchardCore.Module.Targets/2.2.1": {
         "dependencies": {
           "JsonPath.Net": "1.1.6",
@@ -835,6 +990,25 @@
         },
         "runtime": {
           "lib/net8.0/OrchardCore.Mvc.Core.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
+          }
+        }
+      },
+      "OrchardCore.Navigation.Core/2.2.1": {
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Fluid.Core": "2.25.0",
+          "JsonPath.Net": "1.1.6",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.11",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "OrchardCore.Admin.Abstractions": "2.2.1",
+          "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.Infrastructure.Abstractions": "2.2.1",
+          "ZString": "2.6.0"
+        },
+        "runtime": {
+          "lib/net8.0/OrchardCore.Navigation.Core.dll": {
             "assemblyVersion": "2.2.1.0",
             "fileVersion": "2.2.1.0"
           }
@@ -1215,6 +1389,29 @@
           }
         }
       },
+      "YesSql.Filters.Abstractions/5.4.6": {
+        "dependencies": {
+          "Parlot": "1.4.0"
+        },
+        "runtime": {
+          "lib/net8.0/YesSql.Filters.Abstractions.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "YesSql.Filters.Query/5.4.6": {
+        "dependencies": {
+          "YesSql.Abstractions": "5.4.6",
+          "YesSql.Filters.Abstractions": "5.4.6"
+        },
+        "runtime": {
+          "lib/net8.0/YesSql.Filters.Query.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "YesSql.Provider.MySql/5.4.6": {
         "dependencies": {
           "MySqlConnector": "2.4.0",
@@ -1313,6 +1510,34 @@
       "sha512": "sha512-6fTSIHXgC+7fxFE4b3YADi0M4DmuWGDD8GUtZTqIXCcdqazbI1ve68EnpVQkgW6LbLkXL2Wo3s1aGT6vbmRsiA==",
       "path": "fluid.core/2.25.0",
       "hashPath": "fluid.core.2.25.0.nupkg.sha512"
+    },
+    "GraphQL/7.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VJR1sZtf3gXadaQSZdbKeyz2vv0lSE0P90Z/5Jkq7R0iSyTGX/irU/vNI5ffbbWAO8/DFsqbD/Pwqey5CGQSeg==",
+      "path": "graphql/7.9.0",
+      "hashPath": "graphql.7.9.0.nupkg.sha512"
+    },
+    "GraphQL-Parser/8.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lztBQaZaq2g98w2XVSv3Y635AEwk/m6gwlvgmLxfIGxngpklaPSXWEIgCXcCv803qAXvUUTbvaVXuteyQdyVjw==",
+      "path": "graphql-parser/8.4.2",
+      "hashPath": "graphql-parser.8.4.2.nupkg.sha512"
+    },
+    "GraphQL.Analyzers/7.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o9bj42s8yaUASuRZ/WHA6smGgSqXkrlPzhADCr3CoTx95f0YTgkNVyNpe7EPwRQEUHN38E8xO9DfY4f+Ulkxmg==",
+      "path": "graphql.analyzers/7.9.0",
+      "hashPath": "graphql.analyzers.7.9.0.nupkg.sha512"
+    },
+    "GraphQL.DataLoader/7.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G0FNp0d0FuLhamTHVi7SL9ebFK8vjgx+rnV2s+kPAx/RMLotGS+VTC6W6ZpAPfR/SdcW0ac6ptdpaY/pHGyDhg==",
+      "path": "graphql.dataloader/7.9.0",
+      "hashPath": "graphql.dataloader.7.9.0.nupkg.sha512"
     },
     "Json.More.Net/2.0.2": {
       "type": "package",
@@ -1573,6 +1798,20 @@
       "path": "orchardcore.abstractions/2.2.1",
       "hashPath": "orchardcore.abstractions.2.2.1.nupkg.sha512"
     },
+    "OrchardCore.Admin.Abstractions/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DekmY7Uj5B+gnxt0yLEZNi3rY40mYKzNGJa25kVgASbV77RQlxZob0IMPYcXQArSnI13DWhJ7llXYImkO0FbQQ==",
+      "path": "orchardcore.admin.abstractions/2.2.1",
+      "hashPath": "orchardcore.admin.abstractions.2.2.1.nupkg.sha512"
+    },
+    "OrchardCore.Apis.GraphQL.Abstractions/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rl10YT3fEuwOyJpGir2mTr4L3LlPwUQ9nKFw2apW9bL7x6+3ZdX+4Q8AiEgQtUp6Hr+CqGgHIK2+YeK6u/RL7g==",
+      "path": "orchardcore.apis.graphql.abstractions/2.2.1",
+      "hashPath": "orchardcore.apis.graphql.abstractions.2.2.1.nupkg.sha512"
+    },
     "OrchardCore.ContentManagement/2.2.1": {
       "type": "package",
       "serviceable": true,
@@ -1593,6 +1832,20 @@
       "sha512": "sha512-o7ebYVCzpIEf8wXplyqiF7VnJGrzfqQxEupHBQNUEmikpjZNiYDnzKq+1PhbiM+6vPC/EiKHyLLVbEBFgvSXtw==",
       "path": "orchardcore.contentmanagement.display/2.2.1",
       "hashPath": "orchardcore.contentmanagement.display.2.2.1.nupkg.sha512"
+    },
+    "OrchardCore.ContentManagement.GraphQL/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3gxWvv1Mkaf3vK3xEQYaAOAZfANzSIoG/LdpRdFFx961l69eAeEw2v/mIM1oNh5NMsTH/JMv4V/1O4RyWv0GLQ==",
+      "path": "orchardcore.contentmanagement.graphql/2.2.1",
+      "hashPath": "orchardcore.contentmanagement.graphql.2.2.1.nupkg.sha512"
+    },
+    "OrchardCore.Contents.Core/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-skOwmcdoqi5whFvY2ULLGKfSlO71wV8AlqXRl4J/mR8ZpTiEKnbowBUdpIHAIQEjVR0y4jtTTa1IFFWpDIIC9Q==",
+      "path": "orchardcore.contents.core/2.2.1",
+      "hashPath": "orchardcore.contents.core.2.2.1.nupkg.sha512"
     },
     "OrchardCore.ContentTypes.Abstractions/2.2.1": {
       "type": "package",
@@ -1664,6 +1917,13 @@
       "path": "orchardcore.localization.abstractions/2.2.1",
       "hashPath": "orchardcore.localization.abstractions.2.2.1.nupkg.sha512"
     },
+    "OrchardCore.Menu/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4NCpOCYcSj5j+Ni2UwKJifGhKMbZns0c4O/p1eoq9TMGenRUOxPcy1UE7FsZqwIGnpVujQZFYqodEfHBENoSMg==",
+      "path": "orchardcore.menu/2.2.1",
+      "hashPath": "orchardcore.menu.2.2.1.nupkg.sha512"
+    },
     "OrchardCore.Module.Targets/2.2.1": {
       "type": "package",
       "serviceable": true,
@@ -1677,6 +1937,13 @@
       "sha512": "sha512-Nmhq+7aTZ3+2JBP1T9sm6QKt1vvMgGmkyi72lFznmvDtFLpRkPkSMGQh62H7UrULLxTAtYMLq43xPaIIzhHLnA==",
       "path": "orchardcore.mvc.core/2.2.1",
       "hashPath": "orchardcore.mvc.core.2.2.1.nupkg.sha512"
+    },
+    "OrchardCore.Navigation.Core/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SuQxatvNXKsCu3Cktk67zZpBY2FDjNWiay+35JiiPeurfmh9w0gQETNNskJN77F1HY1YWO1CKsD8dWkr+U9eBA==",
+      "path": "orchardcore.navigation.core/2.2.1",
+      "hashPath": "orchardcore.navigation.core.2.2.1.nupkg.sha512"
     },
     "OrchardCore.Recipes.Abstractions/2.2.1": {
       "type": "package",
@@ -1894,6 +2161,20 @@
       "sha512": "sha512-iENuU48AvQm5euBbtMU8O75yShzGym0lxt5HMoXd3Am0od3V5NG5NASvQDUwY0aSKs33KDgD/Di5quVQCbJY+A==",
       "path": "yessql.core/5.4.6",
       "hashPath": "yessql.core.5.4.6.nupkg.sha512"
+    },
+    "YesSql.Filters.Abstractions/5.4.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f4EjZuJYnnVbD57asJ14a6c5z9P/9yXGBuFVeMUg1vfQYnmdc0zSKcmhaYBxaMohSZgv+B+yImZ3qZvfFrDaWg==",
+      "path": "yessql.filters.abstractions/5.4.6",
+      "hashPath": "yessql.filters.abstractions.5.4.6.nupkg.sha512"
+    },
+    "YesSql.Filters.Query/5.4.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cMB9WdUaic1BnsNGjoCInGy7bQ4C4f9SqkrPKHfOBKSz28xcXGN+FEuA0yP1S9EdvxlSlx/Fs9NUVjmpTsH2CA==",
+      "path": "yessql.filters.query/5.4.6",
+      "hashPath": "yessql.filters.query.5.4.6.nupkg.sha512"
     },
     "YesSql.Provider.MySql/5.4.6": {
       "type": "package",

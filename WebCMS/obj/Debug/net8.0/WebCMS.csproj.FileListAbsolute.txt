@@ -459,6 +459,7 @@ D:\HocOrchard\WebCMS\obj\Debug\net8.0\WebCMS.AssemblyInfo.cs
 D:\HocOrchard\WebCMS\obj\Debug\net8.0\WebCMS.csproj.CoreCompileInputs.cache
 D:\HocOrchard\WebCMS\obj\Debug\net8.0\WebCMS.MvcApplicationPartsAssemblyInfo.cs
 D:\HocOrchard\WebCMS\obj\Debug\net8.0\WebCMS.MvcApplicationPartsAssemblyInfo.cache
+D:\HocOrchard\WebCMS\obj\Debug\net8.0\WebCMS.sourcelink.json
 D:\HocOrchard\WebCMS\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\HocOrchard\WebCMS\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\HocOrchard\WebCMS\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

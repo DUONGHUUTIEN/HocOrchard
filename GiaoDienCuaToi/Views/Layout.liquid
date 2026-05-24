@@ -15,20 +15,40 @@
     
     {% script src:"~/GiaoDienCuaToi/js/main.js", at:"Foot" %}
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+<body style="margin: 0; padding: 0;">
+    <!-- Thêm một chút CSS để Menu động của Orchard Core hiển thị ngang hàng đẹp mắt -->
+    <style>
+        .nav-menu ul { display: flex; list-style: none; margin: 0; padding: 0; gap: 20px; align-items: center; }
+        .nav-menu li { margin: 0; padding: 0; }
+        .nav-menu a { text-decoration: none; color: inherit; }
+    </style>
 
-    <header style="background: #333; color: #fff; padding: 15px; text-align: center;">
-        <h1>Đây là Header cố định của Theme</h1>
+    <header class="header">
+        <div class="container">
+            <a href="~/" class="logo">ARCHIVE</a>
+            
+            <nav class="nav-menu">
+                <!-- Vòng lặp thủ công siêu cấp vô địch để lấy dữ liệu Menu -->
+                {% assign mymenu = Content.ContentItemId["menu00000000000000chinhmoi"] %}
+                {% if mymenu != null %}
+                    {% for item in mymenu.Content.MenuPart.MenuItems %}
+                        <a href="{{ item.LinkMenuItemPart.Url | href }}">{{ item.LinkMenuItemPart.Name }}</a>
+                    {% endfor %}
+                {% else %}
+                    <a href="#">Lỗi: Không tìm thấy Menu</a>
+                {% endif %}
+            </nav>
+            
+            <div class="header-actions">
+                <button class="icon-btn"><span class="material-symbols-outlined">language</span></button>
+                <button class="icon-btn"><span class="material-symbols-outlined">search</span></button>
+            </div>
+        </div>
     </header>
 
-  
-        
-        
+    <main>
         {% render_section "Content", required: false %}
-        
- 
-
-    <
+    </main>
 
     {% resources type: "FootScript" %}
 </body>

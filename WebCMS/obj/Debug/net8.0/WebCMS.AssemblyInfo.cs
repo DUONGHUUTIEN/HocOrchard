@@ -109,7 +109,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebCMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d1d558219d0abafcc58a6663be0600403dadd94")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a3b8fbf3ebd9a6abbcf56a906e46383210f3c9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebCMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebCMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

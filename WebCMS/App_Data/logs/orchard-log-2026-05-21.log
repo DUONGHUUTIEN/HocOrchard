@@ -1,0 +1,99 @@
+2026-05-21 09:03:58.0573|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-05-21 09:03:58.0805|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-05-21 09:03:58.0830||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-05-21 09:03:58.0830||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-05-21 09:03:58.0830||||Microsoft.Hosting.Lifetime|INFO|Content root path: D:\HocOrchard\WebCMS 
+2026-05-21 09:45:15.6863|Default|00-9bd899364d5203a026393a128613f88e-3ca383787c59fc39-00||OrchardCore.Deployment.Controllers.ImportController|ERROR|Unable to import a recipe from JSON input. OrchardCore.Recipes.Models.RecipeExecutionException: The content item is missing a 'ContentItemId'.
+ ---> System.InvalidOperationException: The content item is missing a 'ContentItemId'.
+   at OrchardCore.ContentManagement.DefaultContentManager.CreateContentItemVersionAsync(ContentItem contentItem, IEnumerable`1 evictionVersions)
+   at OrchardCore.ContentManagement.DefaultContentManager.ImportAsync(IEnumerable`1 contentItems)
+   at OrchardCore.Recipes.Services.RecipeExecutor.<>c__DisplayClass8_0.<<ExecuteStepAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteStepAsync(RecipeExecutionContext recipeStep)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeDeploymentTargetHandler.ImportFromFileAsync(IFileProvider fileProvider)
+   at OrchardCore.Deployment.Core.Services.DeploymentManager.ImportDeploymentPackageAsync(IFileProvider deploymentPackage)
+   at OrchardCore.Deployment.Controllers.ImportController.Json(ImportJsonViewModel model)    at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeDeploymentTargetHandler.ImportFromFileAsync(IFileProvider fileProvider)
+   at OrchardCore.Deployment.Core.Services.DeploymentManager.ImportDeploymentPackageAsync(IFileProvider deploymentPackage)
+   at OrchardCore.Deployment.Controllers.ImportController.Json(ImportJsonViewModel model)
+2026-05-21 09:53:53.0373|Default|00-23dd0de95a59da1fae28742f66d89cb1-39f97e1cb6102aaa-00||OrchardCore.ContentManagement.DefaultContentManager|ERROR|Error importing content item version id 'page000000000000000000home' : 'Your permalink can't be set to the homepage, please use the homepage option instead.' 
+2026-05-21 09:53:53.0445|Default|00-23dd0de95a59da1fae28742f66d89cb1-39f97e1cb6102aaa-00||OrchardCore.Deployment.Controllers.ImportController|ERROR|Unable to import a recipe from JSON input. OrchardCore.Recipes.Models.RecipeExecutionException: Your permalink can't be set to the homepage, please use the homepage option instead.
+ ---> System.ComponentModel.DataAnnotations.ValidationException: Your permalink can't be set to the homepage, please use the homepage option instead.
+   at OrchardCore.ContentManagement.DefaultContentManager.ImportAsync(IEnumerable`1 contentItems)
+   at OrchardCore.Recipes.Services.RecipeExecutor.<>c__DisplayClass8_0.<<ExecuteStepAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteStepAsync(RecipeExecutionContext recipeStep)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeDeploymentTargetHandler.ImportFromFileAsync(IFileProvider fileProvider)
+   at OrchardCore.Deployment.Core.Services.DeploymentManager.ImportDeploymentPackageAsync(IFileProvider deploymentPackage)
+   at OrchardCore.Deployment.Controllers.ImportController.Json(ImportJsonViewModel model)    at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeDeploymentTargetHandler.ImportFromFileAsync(IFileProvider fileProvider)
+   at OrchardCore.Deployment.Core.Services.DeploymentManager.ImportDeploymentPackageAsync(IFileProvider deploymentPackage)
+   at OrchardCore.Deployment.Controllers.ImportController.Json(ImportJsonViewModel model)
+2026-05-21 09:55:43.1043|Default|00-5b19fcba7c98590a5aed6398767f1fd5-e442c4eb1f296efb-00||OrchardCore.ContentManagement.DefaultContentManager|ERROR|Error importing content item version id 'page000000000000000000home' : 'Your permalink is already in use.' 
+2026-05-21 09:55:43.1112|Default|00-5b19fcba7c98590a5aed6398767f1fd5-e442c4eb1f296efb-00||OrchardCore.Deployment.Controllers.ImportController|ERROR|Unable to import a recipe from JSON input. OrchardCore.Recipes.Models.RecipeExecutionException: Your permalink is already in use.
+ ---> System.ComponentModel.DataAnnotations.ValidationException: Your permalink is already in use.
+   at OrchardCore.ContentManagement.DefaultContentManager.ImportAsync(IEnumerable`1 contentItems)
+   at OrchardCore.Recipes.Services.RecipeExecutor.<>c__DisplayClass8_0.<<ExecuteStepAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Environment.Shell.Scope.ShellScope.UsingAsync(Func`2 execute, Boolean activateShell)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteStepAsync(RecipeExecutionContext recipeStep)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeDeploymentTargetHandler.ImportFromFileAsync(IFileProvider fileProvider)
+   at OrchardCore.Deployment.Core.Services.DeploymentManager.ImportDeploymentPackageAsync(IFileProvider deploymentPackage)
+   at OrchardCore.Deployment.Controllers.ImportController.Json(ImportJsonViewModel model)    at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeExecutor.ExecuteAsync(String executionId, RecipeDescriptor recipeDescriptor, IDictionary`2 environment, CancellationToken cancellationToken)
+   at OrchardCore.Recipes.Services.RecipeDeploymentTargetHandler.ImportFromFileAsync(IFileProvider fileProvider)
+   at OrchardCore.Deployment.Core.Services.DeploymentManager.ImportDeploymentPackageAsync(IFileProvider deploymentPackage)
+   at OrchardCore.Deployment.Controllers.ImportController.Json(ImportJsonViewModel model)
+2026-05-21 10:52:13.7490||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-05-21 10:53:31.3736|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-05-21 10:53:31.3970|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-05-21 10:53:31.3970||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-05-21 10:53:31.3970||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-05-21 10:53:31.3970||||Microsoft.Hosting.Lifetime|INFO|Content root path: D:\HocOrchard\WebCMS 
+2026-05-21 10:57:28.3476||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-05-21 10:58:01.7452|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-05-21 10:58:01.7730|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-05-21 10:58:01.7730||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-05-21 10:58:01.7730||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-05-21 10:58:01.7730||||Microsoft.Hosting.Lifetime|INFO|Content root path: D:\HocOrchard\WebCMS 
+2026-05-21 11:03:10.7783||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-05-21 11:03:18.5307|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-05-21 11:03:18.5601|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-05-21 11:03:18.5633||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-05-21 11:03:18.5633||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-05-21 11:03:18.5633||||Microsoft.Hosting.Lifetime|INFO|Content root path: D:\HocOrchard\WebCMS 
+2026-05-21 11:10:25.4343||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 

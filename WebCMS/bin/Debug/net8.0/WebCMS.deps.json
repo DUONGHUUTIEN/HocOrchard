@@ -10,7 +10,8 @@
         "dependencies": {
           "GiaoDienCuaToi": "1.0.0",
           "OrchardCore.Application.Cms.Targets": "2.2.1",
-          "OrchardCore.Logging.NLog": "2.2.1"
+          "OrchardCore.Logging.NLog": "2.2.1",
+          "OrchardCore.Menu": "2.2.1"
         },
         "runtime": {
           "WebCMS.dll": {}
@@ -7430,6 +7431,7 @@
         "dependencies": {
           "OrchardCore.ContentManagement": "2.2.1",
           "OrchardCore.DisplayManagement": "2.2.1",
+          "OrchardCore.Menu": "2.2.1",
           "OrchardCore.ResourceManagement": "2.2.1",
           "OrchardCore.Theme.Targets": "2.2.1"
         },
