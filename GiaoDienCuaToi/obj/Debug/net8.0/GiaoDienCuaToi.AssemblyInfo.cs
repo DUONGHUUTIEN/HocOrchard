@@ -20,7 +20,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GiaoDienCuaToi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a3b8fbf3ebd9a6abbcf56a906e46383210f3c9c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+353b2565dc9d4ab304a28999d83a384c8b5ded36")]
 [assembly: System.Reflection.AssemblyProductAttribute("GiaoDienCuaToi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GiaoDienCuaToi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
