@@ -97,3 +97,8 @@
 2026-05-21 11:03:18.5633||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
 2026-05-21 11:03:18.5633||||Microsoft.Hosting.Lifetime|INFO|Content root path: D:\HocOrchard\WebCMS 
 2026-05-21 11:10:25.4343||||Microsoft.Hosting.Lifetime|INFO|Application is shutting down... 
+2026-05-21 11:10:32.8343|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: https://localhost:5001 
+2026-05-21 11:10:32.8617|||14|Microsoft.Hosting.Lifetime|INFO|Now listening on: http://localhost:5000 
+2026-05-21 11:10:32.8617||||Microsoft.Hosting.Lifetime|INFO|Application started. Press Ctrl+C to shut down. 
+2026-05-21 11:10:32.8617||||Microsoft.Hosting.Lifetime|INFO|Hosting environment: Development 
+2026-05-21 11:10:32.8617||||Microsoft.Hosting.Lifetime|INFO|Content root path: D:\HocOrchard\WebCMS 
